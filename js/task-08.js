@@ -7,7 +7,7 @@ function onLoginSubmit(event) {
   const emailInput = loginForm.elements.email;
   const passwordInput = loginForm.elements.password;
 
-  if (emailInput.value === "" || passwordInput.value === "") {
+  if (emailInput.value.trim() === "" || passwordInput.value.trim() === "") {
     alert("Все поля должны быть заполнены");
   } else {
     const userInfo = {
